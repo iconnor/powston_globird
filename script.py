@@ -20,6 +20,12 @@ current_minutes = current_hour * 60 + current_minute
 TARGET_SOC = 100
 EXPORT_BUFFER_SOC = 2
 
+# Variables to create night reserve
+GOOD_SUN_DAY = 10  # noqa
+BATTERY_SOC_NEEDED = 28  # noqa
+BATTERY_SOC_AC = 15  # noqa
+BAD_SUN_DAY_KEEP_SOC = 64  # noqa
+
 # Powston rules engine provides:
 # night_reserve = SOC needed from now until sunrise / next cheap energy window
 # is_daytime = whether there is meaningful solar production
